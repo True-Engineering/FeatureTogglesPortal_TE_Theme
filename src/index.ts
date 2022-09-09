@@ -1,0 +1,101 @@
+import { trueEngineeringTheme } from '@true-engineering/ui-kit-true-engineering-theme';
+import type {
+  FeatureTogglesUiTheme,
+  FeatureTogglesThemedLocale,
+} from '@true-engineering/feature-toggles-portal-ui';
+import {
+  accordionStyles,
+  addMemberToProjectButtonStyles,
+  contextPopupStyles,
+  cssBaselineStyles,
+  deniedMessageStyles,
+  dividerStyles,
+  dropdownStyles,
+  emptyContentMessageStyles,
+  environmentRoleDropdownStyles,
+  flagEnvironmentsListStyles,
+  flagEnvironmentsStatesStyles,
+  flagsPageStyles,
+  flagsTableStyles,
+  flippingStrategyParamsListStyles,
+  formStyles,
+  groupRowStyles,
+  headerIconWithDropdownStyles,
+  iconButtonStyles,
+  linkButtonStyles,
+  listStyles,
+  multipleInputStyles,
+  notFoundMessageStyles,
+  pageFooterStyles,
+  projectEnvironmentsListStyles,
+  projectsPageStyles,
+  sortHeadStyles,
+  syncEnvironmentsFormStyles,
+  syncPortalsFormStyles,
+  tableItemStyles,
+  tableStyles,
+  tabsStyles,
+  titleStyles,
+  updateEnvironmentTokenFormStyles,
+  historyOfChangesListItemContentStyles,
+  textWithStatusStyles,
+  disableFreezeFeatureFlagsModalContentStyles,
+  enableFreezeFeatureFlagsFormStyles,
+  freezeNotificationStyles,
+} from './styles';
+import trueEngineeringLocale from './locale';
+import assets from './assets';
+
+export type TrueEngineeringFeatureTogglePortalTheme = FeatureTogglesUiTheme;
+
+export const trueEngineeringFeatureTogglePortalTheme: TrueEngineeringFeatureTogglePortalTheme = {
+  ...trueEngineeringTheme,
+  components: {
+    ...trueEngineeringTheme.components,
+    Accordion: accordionStyles,
+    AddMemberToProjectButton: addMemberToProjectButtonStyles,
+    ContextPopup: contextPopupStyles,
+    CssBaseline: cssBaselineStyles,
+    DeniedMessage: deniedMessageStyles,
+    Divider: dividerStyles,
+    Dropdown: dropdownStyles,
+    EmptyContentMessage: emptyContentMessageStyles,
+    EnvironmentRoleDropdown: environmentRoleDropdownStyles,
+    FlagEnvironmentsList: flagEnvironmentsListStyles,
+    FlagEnvironmentsStates: flagEnvironmentsStatesStyles,
+    FlagsPage: flagsPageStyles,
+    FlagsTable: flagsTableStyles,
+    FlippingStrategyParamsList: flippingStrategyParamsListStyles,
+    formStyles: formStyles,
+    GroupRow: groupRowStyles,
+    HeaderIconWithDropdown: headerIconWithDropdownStyles,
+    IconButton: iconButtonStyles,
+    LinkButton: linkButtonStyles,
+    List: listStyles,
+    MultipleInput: multipleInputStyles,
+    NotFoundMessage: notFoundMessageStyles,
+    PageFooter: pageFooterStyles,
+    ProjectEnvironmentsList: projectEnvironmentsListStyles,
+    ProjectsPage: projectsPageStyles,
+    SortHead: sortHeadStyles,
+    SyncEnvironmentsForm: syncEnvironmentsFormStyles,
+    SyncPortalsForm: syncPortalsFormStyles,
+    TableItem: tableItemStyles,
+    tableStyles: tableStyles,
+    Tabs: tabsStyles,
+    Title: titleStyles,
+    UpdateEnvironmentTokenForm: updateEnvironmentTokenFormStyles,
+    HistoryOfChangesListItemContent: historyOfChangesListItemContentStyles,
+    TextWithStatus: textWithStatusStyles,
+    EnableFreezeFeatureFlagsForm: enableFreezeFeatureFlagsFormStyles,
+    DisableFreezeFeatureFlagsModalContent: disableFreezeFeatureFlagsModalContentStyles,
+    FreezeNotification: freezeNotificationStyles,
+  },
+  assets,
+};
+
+export const locale: FeatureTogglesThemedLocale = trueEngineeringLocale;
+
+export default trueEngineeringFeatureTogglePortalTheme;
+
+export * from './fonts';
